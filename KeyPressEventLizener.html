@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>Event Listening</title>
+</head>
+<body>
+    <button id="sj">1</button>
+
+<script>
+    let btn = document.getElementById("sj");
+
+    // Listen on the whole document so arrow keys work without focusing the button
+    document.addEventListener("keydown", (event) => {
+        console.log(event.key);
+        switch(event.key) {
+            case "ArrowUp":
+                btn.textContent = Number(btn.textContent) + 1;
+                break;
+            case "ArrowDown":
+                btn.textContent = Number(btn.textContent) - 1;
+                break;
+            case "ArrowLeft":
+                btn.textContent = "Left";
+                break;
+            case "ArrowRight":
+                btn.textContent = "Right";
+                break;
+        }
+    });
+</script>
+</body>
+</html>

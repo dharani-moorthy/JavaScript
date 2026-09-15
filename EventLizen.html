@@ -1,0 +1,26 @@
+<!--it is used for event listening for reactions like when i move the mouse over an element or an keypress -->
+<!doctype html>
+<html>
+    <head>
+        <title>Event Listening</title>
+    </head>
+    <body>
+        <button id="sj">Click Me</button>
+    </body>
+<script>
+    let btn = document.getElementById("sj"); // ID must be in quotes
+    btn.addEventListener("click", (event) => {
+        btn.textContent = "Clicked"; // changes button text
+        console.log("Button clicked"); // logs event details
+    });
+    //let btn = document.getElementById("sj"); // ID must be in quotes
+    btn.addEventListener("mouseover", (event) => {
+        btn.textContent = "Mouse Over"; // changes button text
+        console.log("Mouse is over the button"); // logs event details
+    });
+    btn.addEventListener("mouseout", (event) => {
+        btn.textContent = "Mouse Out"; // changes button text
+        console.log("Mouse is not over the button"); // logs event details
+    });
+</script>
+</html>
