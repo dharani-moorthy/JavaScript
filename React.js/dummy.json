@@ -1,0 +1,32 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "description": "HTML basics",
+      "price": "$99.99",
+      "image": "/assets/HTML.png"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "description": "CSS styling",
+      "price": "$99.99",
+      "image": "/assets/CSS.png"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "description": "JavaScript programming",
+      "price": "$99.99",
+      "image": "/assets/js.png"
+    },
+    {
+      "id": 4,
+      "name": "React",
+      "description": "React library for UI",
+      "price": "$99.99",
+      "image": "/assets/react.png"
+    }
+  ]
+}
